@@ -1,0 +1,12 @@
+{
+  "articles": [
+    {
+      "no": 1,
+      "title": "Sample Title",
+      "subTitle": "SubTitle",
+      "image": "https://images.unsplash.com/photo-1577436797017-22c4d4d0f632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80",
+      "content": "Sample",
+      "createdTime": "2019-12-30T16:59:46.443Z"
+    }
+  ]
+}
