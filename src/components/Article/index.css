@@ -1,0 +1,51 @@
+.Article {
+    display: flex;
+    word-break: break-all;
+    text-align: left;
+}
+
+.Article__summary {
+    flex: 1 1 auto;
+    padding-right: 40px;
+}
+
+.Article__summary__title {
+    font-size: 20px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Article__summary__desc {
+    display: block;
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666;
+    max-height: 43px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Article__summary__etc {
+    display: block;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #959595;
+}
+
+.Article__thumbnail {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.Article__thumbnail img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}

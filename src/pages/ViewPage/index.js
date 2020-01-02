@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BasicTemplates from '../templates/BasicTemplates'
+import BasicTemplates from '../../templates/BasicTemplates'
 
 function ViewPage(props) {
 	return (

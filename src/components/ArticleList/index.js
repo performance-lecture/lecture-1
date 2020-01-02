@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
 import Article from '../Article'
+import './index.css'
 
 function ArticleList(props) {
 	const [articles, setArticles] = useState([])
@@ -19,11 +20,13 @@ function ArticleList(props) {
 	}, [])
 
 	return (
-		<div>
+		<ul className={'ArticleList'} style={{listStyle: 'none', padding: 0}}>
 			{articles.map((item) => (
-				<Article key={item.no} {...item}/>
+				<li key={item.no}>
+					<Article {...item}/>
+				</li>
 			))}
-		</div>
+		</ul>
 	)
 }
 
