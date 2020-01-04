@@ -19,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "serve": "npm run build && node ./node_modules/serve/bin/serve.js -u -s build",
     "server": "node ./node_modules/json-server/lib/cli/bin.js --watch ./server/database.json -c ./server/config.json"
   },
   "eslintConfig": {
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "serve": "^11.3.0"
   }
 }
