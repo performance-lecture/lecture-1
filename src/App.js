@@ -9,7 +9,7 @@ function App() {
 		<div className="App">
 			<Switch>
 				<Route path="/" component={ListPage} exact />
-				<Route path="/view" component={ViewPage} exact />
+				<Route path="/view/:id" component={ViewPage} exact />
 			</Switch>
 		</div>
   );

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 import Article from '../Article'
@@ -22,8 +23,10 @@ function ArticleList(props) {
 	return (
 		<ul className={'ArticleList'} style={{listStyle: 'none', padding: 0}}>
 			{articles.map((item) => (
-				<li key={item.no}>
-					<Article {...item}/>
+				<li key={item.id}>
+					<Link to={`/view/${item.id}`} style={{textDecoration: 'none', color: 'initial'}}>
+						<Article {...item}/>
+					</Link>
 				</li>
 			))}
 		</ul>

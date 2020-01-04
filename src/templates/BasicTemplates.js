@@ -9,7 +9,7 @@ function BasicTemplates(props) {
 			<section className={'Header'}>
 				<Header/>
 			</section>
-			<section className={'Content'}>
+			<section className={'Body'}>
 				{props.children}
 			</section>
 			<section className={'Footer'}>
