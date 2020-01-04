@@ -6,13 +6,13 @@ import Footer from '../components/Footer'
 function BasicTemplates(props) {
 	return (
 		<div className="BasicTemplates">
-			<section className={'Header'}>
+			<section className={'HeaderSection'}>
 				<Header/>
 			</section>
 			<section className={'Body'}>
 				{props.children}
 			</section>
-			<section className={'Footer'}>
+			<section className={'FooterSection'}>
 				<Footer/>
 			</section>
 		</div>
