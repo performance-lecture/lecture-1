@@ -1,36 +1,36 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, { useEffect, useState, useCallback } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 import Article from '../Article'
 import './index.css'
 
 function ArticleList(props) {
-	const [articles, setArticles] = useState([])
+  const [articles, setArticles] = useState([])
 
-	const getArticles = () => {
-		axios.get('http://localhost:3001/articles')
-			.then((success) => {
-				console.log(success.data)
-				setArticles([...articles, ...success.data])
-			})
-	}
+  // 게시글 리스트 가져오기
+  const getArticles = useCallback(() => {
+    axios.get('http://localhost:3001/articles').then(success => {
+      console.log(success.data)
+      setArticles([...success.data])
+    })
+  }, [])
 
-	useEffect(() => {
-		getArticles()
-	}, [])
+  useEffect(() => {
+    getArticles()
+  }, [getArticles])
 
-	return (
-		<ul className={'ArticleList'} style={{listStyle: 'none', padding: 0}}>
-			{articles.map((item) => (
-				<li key={item.id}>
-					<Link to={`/view/${item.id}`} style={{textDecoration: 'none', color: 'initial'}}>
-						<Article {...item}/>
-					</Link>
-				</li>
-			))}
-		</ul>
-	)
+  return (
+    <ul className={'ArticleList'} style={{ listStyle: 'none', padding: 0 }}>
+      {articles.map(item => (
+        <li key={item.id}>
+          <Link to={`/view/${item.id}`} style={{ textDecoration: 'none', color: 'initial' }}>
+            <Article {...item} />
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 export default ArticleList

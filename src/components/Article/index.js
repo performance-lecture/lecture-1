@@ -7,6 +7,10 @@ function zeroPad(value, len) {
   return str.substring(str.length - len)
 }
 
+/*
+ * 파라미터로 넘어온 문자열에서 일부 특수문자를 제거하는 함수
+ * (Markdown으로 된 문자열의 특수문자를 제거하기 위함)
+ * */
 function removeSpecialCharacter(str) {
   const removeCharacters = ['#', '_', '*', '~', '&', ';', '!', '[', ']', '`', '>', '\n', '=', '-']
   let _str = str
@@ -43,7 +47,7 @@ function Article(props) {
         </div>
       </div>
       <div className={'Article__thumbnail'}>
-        <img src={props.image} alt={'thumbnail'} />
+        <img src={props.image} alt="thumbnail" />
       </div>
     </div>
   )
