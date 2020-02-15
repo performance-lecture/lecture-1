@@ -6,13 +6,13 @@ import ViewPage from './pages/ViewPage/index'
 
 function App() {
   return (
-		<div className="App">
-			<Switch>
-				<Route path="/" component={ListPage} exact />
-				<Route path="/view/:id" component={ViewPage} exact />
-			</Switch>
-		</div>
-  );
+    <div className="App">
+      <Switch>
+        <Route path="/" component={ListPage} exact />
+        <Route path="/view/:id" component={ViewPage} exact />
+      </Switch>
+    </div>
+  )
 }
 
-export default App;
+export default App

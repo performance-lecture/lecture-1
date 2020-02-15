@@ -1,19 +1,19 @@
 .ViewPage {
-    width: 700px;
-    text-align: left;
-    margin: auto;
+  width: 700px;
+  text-align: left;
+  margin: auto;
 }
 
 .ViewPage__title {
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-top: 10px;
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-top: 10px;
 }
 
 .ViewPage__image {
-    width: 100%;
+  width: 100%;
 }
 
 .ViewPage__content {
-    line-height: 1.4;
+  line-height: 1.4;
 }
