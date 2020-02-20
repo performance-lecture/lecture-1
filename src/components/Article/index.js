@@ -47,7 +47,7 @@ function Article(props) {
         </div>
       </div>
       <div className={'Article__thumbnail'}>
-        <img src={props.image} alt="thumbnail" />
+        <img src={props.image + '/1600x1600'} alt="thumbnail" />
       </div>
     </div>
   )
