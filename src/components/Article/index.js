@@ -7,6 +7,11 @@ function zeroPad(value, len) {
   return str.substring(str.length - len)
 }
 
+/* 파라미터 참고: https://unsplash.com/documentation#supported-parameters */
+function getParametersForUnsplash({width, height, quality, format}) {
+  return `?w=${width}&h=${height}&q=${quality}&fm=${format}&fit=crop`
+}
+
 /*
  * 파라미터로 넘어온 문자열에서 일부 특수문자를 제거하는 함수
  * (Markdown으로 된 문자열의 특수문자를 제거하기 위함)
@@ -47,7 +52,7 @@ function Article(props) {
         </div>
       </div>
       <div className={'Article__thumbnail'}>
-        <img src={props.image + '/1600x1600'} alt="thumbnail" />
+        <img src={props.image + getParametersForUnsplash({width: 1200, height: 1200, quality: 80, format: 'jpg'})} alt="thumbnail" />
       </div>
     </div>
   )
