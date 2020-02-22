@@ -11,7 +11,6 @@ function ArticleList(props) {
   // 게시글 리스트 가져오기
   const getArticles = useCallback(() => {
     axios.get('http://localhost:3001/articles').then(success => {
-      console.log(success.data)
       setArticles([...success.data])
     })
   }, [])
