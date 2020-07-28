@@ -7,7 +7,7 @@
 1. download sources
 
 ```
-$ git clone https://github.com/performance-lecture/lecture-2.git
+$ git clone https://github.com/performance-lecture/lecture-1.git
 ```
 
 2. install dependencies
