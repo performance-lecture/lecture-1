@@ -1,6 +1,6 @@
 ## Lecture-1
 
-'실전으로 배우는 웹 성능 최적화 for 리액트' 1번째 강의 소스입니다.
+'프론트엔드 개발자를 위한, 실전 웹 성능 최적화(feat. React) - Part. 1' 1번째 강의 소스입니다.
 
 ### 실행
 
@@ -33,8 +33,7 @@ $ npm run server
 or
 $ yarn server
 ```
-
-(위의 server start와 다른 콘솔에서 띄워줍니다.)
+*3번의 dev server 와 다른 콘솔에서 띄워줍니다.
 
 5. build + serve
 
