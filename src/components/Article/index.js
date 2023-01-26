@@ -52,7 +52,7 @@ function Article(props) {
         </div>
       </div>
       <div className={'Article__thumbnail'}>
-        <img src={props.image + getParametersForUnsplash({width: 1200, height: 1200, quality: 80, format: 'jpg'})} alt="thumbnail" />
+        <img src={props.image + getParametersForUnsplash({width: 240, height: 240, quality: 80, format: 'jpg'})} alt="thumbnail" />
       </div>
     </div>
   )
