@@ -41,7 +41,7 @@ $ yarn serve
 - [x] Image Size - Optimizing using CDN
 - [ ] Bottleneck code - Code Refactoring
 - [x] Bundles larger than necessary - Code Splitting
-- [ ] Text Compression - Text Compression
+- [x] Text Compression - Text Compression
 
 ## As - Is
 
