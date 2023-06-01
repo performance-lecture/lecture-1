@@ -38,7 +38,7 @@ $ yarn serve
 
 ## Problems - Solutions
 
-- [ ] Image Size - Optimizing using CDN
+- [x] Image Size - Optimizing using CDN
 - [ ] Bottleneck code - Code Refactoring
 - [x] Bundles larger than necessary - Code Splitting
 - [ ] Text Compression - Text Compression
